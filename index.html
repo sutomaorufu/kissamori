@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>パスワード保護ページ</title>
+  <style>
+    #login-screen {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+
+<div id="login-screen">
+  <h2>パスワードを入力してください</h2>
+  <input type="password" id="password-input" placeholder="パスワード">
+  <button onclick="checkPassword()">GO</button>
+  <p id="error" style="color:red;"></p>
+</div>
+
+<script>
+  function checkPassword() {
+    const correctPassword = "morimori"; // ←ここを好きなパスワードに変更
+    const input = document.getElementById("password-input").value;
+    if (input === correctPassword) {
+      document.getElementById("login-screen").style.display = "none";
+    } else {
+      document.getElementById("error").textContent = "パスワードが違います";
+    }
+  }
+</script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>喫茶もり｜ Mori Dining</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>喫茶もり</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">店長</a></li>
+        <li><a href="#menu">メニュー</a></li>
+        <li><a href="#access">アクセス</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>みんなの溜まり場</h2>
+    <p>落ち着く空間を目指しています。</p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>店長</h2>
+    <p>よっち　プリンケツプリンケツ</p>
+  </section>
+
+  <section id="menu" class="section">
+    <h2>メニュー</h2>
+    <ul>
+      <li>だし巻き卵</li>
+      <li>なめろう</li>
+      <li>キーマカレー</li>
+    </ul>
+  </section>
+
+  <section id="access" class="section">
+    <h2>アクセス</h2>
+    <p>〒542-0086 大阪府大阪市中央区西心斎橋 2丁目8-3 ラフィーヌ西心斎橋4階</p>
+    <p>最寄駅：なんば駅 徒歩5分</p>
+    <p>最寄駅：心斎橋駅 徒歩10分</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>お問い合わせ</h2>
+    <p>電話：なし</p>
+    <p>メール：なし</p>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 喫茶もり</p>
+  </footer>
+
+</body>
+</html>
