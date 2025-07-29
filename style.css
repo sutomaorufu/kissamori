@@ -1,63 +1,70 @@
-/* 全体 */
 body {
   margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
-  background-color: #fffdf6;
-  color: #333;
-  line-height: 1.6;
+  font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+  background-color: #f69c5a;
+  color: #000;
 }
 
-/* ヘッダー */
-.site-header {
-  background-color: #fbbd08;
-  color: white;
-  padding: 20px;
+section.hero {
   text-align: center;
+  padding: 50px 20px;
 }
 
-.site-header h1 {
-  margin: 0;
-  font-size: 2em;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0;
+.logo-circle {
+  width: 200px;
+  height: 200px;
+  background-color: #e44a00;
+  border-radius: 50%;
+  margin: 0 auto 20px;
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 20px;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+.logo-circle img {
+  max-width: 130px;
+  height: auto;
 }
 
-/* ヒーローイメージ風セクション */
-.hero {
-  background-color: #ffeaa7;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.hero h2 {
-  font-size: 2em;
+.main-title {
+  font-size: 22px;
   margin-bottom: 10px;
 }
 
-/* 各セクション */
-.section {
-  padding: 40px 20px;
-  max-width: 800px;
+.sub-title {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  line-height: 2.2;
+  text-align: left;
+  max-width: 300px;
   margin: 0 auto;
 }
 
-/* フッター */
-.site-footer {
-  background-color: #fbbd08;
-  color: white;
-  text-align: center;
-  padding: 20px;
+section.content {
+  padding: 40px 20px;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.section p,
+.section ul {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.section ul {
+  padding-left: 20px;
 }
