@@ -43,15 +43,21 @@ section.hero {
   line-height: 2.2;
   text-align: left;
   max-width: 300px;
-  margin: 0 auto;
+  margin: 40px 90px;
 }
 
-section.content {
+/* section.content {
   padding: 40px 20px;
+} */
+
+.yotti-photo img {
+  max-width: 260px;
+  height: auto;
 }
 
 .section {
   margin-bottom: 60px;
+  padding-left: 30px;
 }
 
 .section h2 {
